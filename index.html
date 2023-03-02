@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="player">
+          <div class="player__top">
+            <div class="player__title"></div>
+            <div class="player__volume"></div>
+          </div>
+          <div class="player__time"></div>
+          <div class="player__progress_container">
+            <div class="progress"></div>
+          </div>
+          <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <ul class="play-list"></ul>
+        </div>
+        <div class="weather">
+          <input type="text" class="city" />
+          <i class="weather-icon owf"></i>
+          <div class="weather-error"></div>
+          <div class="description-container">
+            <span class="temperature"></span>
+            <span class="weather-description"></span>
+          </div>
+          <div class="wind"></div>
+          <div class="humidity"></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="slider-icons">
+          <button class="slide-prev slider-icon"></button>
+          <button class="slide-next slider-icon"></button>
+        </div>
+        <time class="time"></time>
+        <date class="date"></date>
+        <div class="greeting-container">
+          <span class="greeting"></span>
+          <input type="text" class="name" />
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__left">
+          <div class="language__btn language__btn_of">EN</div>
+          <div class="settings__container">
+              <div class="settings__popup">
+                  <h2 class="setting__title">Settings</h2>
+                  <div class="setting__item setting__item_time">
+                    <div class="item__name item__name_time">Time</div>
+                    <div class="item__checkbox item__checkbox_time"></div>
+                  </div>
+                  <div class="setting__item setting__item_date">
+                    <div class="item__name item__name_date">Date</div>
+                    <div class="item__checkbox item__checkbox_date"></div>
+                  </div>
+                  <div class="setting__item setting__item_greeting">
+                    <div class="item__name item__name_greeting">Greeting</div>
+                    <div class="item__checkbox item__checkbox_greeting"></div>
+                  </div>
+                  <div class="setting__item setting__item_quotes">
+                    <div class="item__name item__name_quotes">Quotes</div>
+                    <div class="item__checkbox item__checkbox_quotes"></div>
+                  </div>
+                  <div class="setting__item setting__item_player">
+                    <div class="item__name item__name_player">Player</div>
+                    <div class="item__checkbox item__checkbox_player"></div>
+                  </div>
+                  <div class="setting__item setting__item_weather">
+                    <div class="item__name item__name_weather">Weather</div>
+                    <div class="item__checkbox item__checkbox_weather"></div>
+                  </div>
+                  <div class="setting__item setting__item_bg">
+                    <div class="item__name item__name_bg">Photo source:</div>
+                    <button class="item__btn btn__gh">GitHub</button>
+                    <button class="item__btn btn__flickr">Flickr API</button>
+                    <button class="item__btn btn__unsplash">Unsplash API</button>
+                  </div>
+                  <div class="setting__item setting__item_tag">
+                    <div class="item__name item__name_tag">Photo tag:</div>
+                    <input type="text" class="tag" placeholder="Enter your tag">
+                  </div>
+                  <div class="setting__item setting__item_language">
+                    <div class="item__name item__name_language">Language:</div>
+                    <div class="language__btn language__btn_setting">EN</div>
+                  </div>
+              </div>
+            <div class="settings__btn"><img src="assets/img/icons8-settings-64.png" alt="settings"></div>
+          </div>
+        </div>
+        <div class="footer__center">
+          <button class="change-quote"></button>
+          <div>
+            <div class="quote"></div>
+            <div class="author"></div>
+          </div>
+        </div>
+        <ul class="footer__right">
+          <li class="menu__item"><a href="https://github.com/Raich94" class="menu__link" target="_blank">github</a></li>
+          <li class="menu__item"><a href="https://rs.school/" class="menu__link" target="_blank">RS</a></li>
+          <li class="menu__item">© 2023</a></li>
+        </ul>
+      </footer>
+    </div>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
